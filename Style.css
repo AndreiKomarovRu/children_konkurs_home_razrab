@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap');
+
+
+.Logo {
+  width: 100%;
+  height: 40px;
+  font-size: 34px;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.Title {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+}
+.Title_Title {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+.Title_Desc {
+  font-size: 13px;
+  color: #BBB;
+}
+
+
+
+.Games_Scroll_Content {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+.Games_Scroll {
+  width: 260px;
+  margin-right: 16px;
+  flex: none;
+}
+.Games_Scroll_Image {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  flex: none;
+}
+.Games_Scroll_Title {
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 2px;
+  flex: none;
+}
+.Games_Scroll_Age {
+  font-size: 13px;
+  color: #BBB;
+  flex: none;
+}
+.Games_Scroll_Soon {
+  font-size: 13px;
+  color: #FFF;
+  font-weight: 500;
+  background: #EF4A3E;
+  border-radius: 6px;
+  padding: 4px 6px;
+  display: inline-block;
+  margin-bottom: 2px;
+  flex: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.GameStats_Image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+.GameStats_Name {
+  font-size: 17px;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+.GameStats_Desc {
+  width: 90%;
+  font-size: 13px;
+  color: #BBB;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+}
+.GameStats_Button_List {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #F2F2F2;
+}
+.GameStats_Button {
+  padding: 12px 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.GameStats_Button_Icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.GameStats_Button_Name {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+.GameTask {
+  font-size: 17px;
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+.GameTask_Title {
+  width: 70%;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.GameTask_Otvet {
+  color: #EF4A3E;
+  margin-left: 10px;
+  font-weight: 400;
+}
+.GameTask_Right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+}
+.GameTask_Time {
+  color: #DDD;
+  margin-right: 10px;
+}
+.GameTask_Status {
+  width: 24px;
+  height: 24px;
+  color: #000;
+}
+.GameTask_Status.success {
+  color: #5DAA40;
+}
+.GameTask_Status.error {
+  color: #EF4A3E;
+}
+
+
+
+
+
+.Game_Test_Message {
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.Game_Test_Title {
+  color: #FFF;
+  font-size: 28px;
+  background: #FFA500;
+  border-radius: 30px 0;
+  padding: 8px 26px;
+  margin-bottom: 20px;
+}
+.Game_Test_Text {
+  width: 80%;
+  color: #FFF;
+  font-size: 24px;
+  letter-spacing: 1px;
+  padding: 12px 16px;
+}
+.Game_Test_Button {
+  color: #FFF;
+  font-size: 28px;
+  background: #00B70C;
+  border-radius: 6px;
+  padding: 6px 16px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+.Game {
+  width: 100%;
+  height: 667px;
+  background: radial-gradient(#00A9F2, #0097DC);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+.Game_Background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.Game_Background.success {
+  background: radial-gradient(#26CE1A, #1FB517);
+  animation: anim_Game_Background 1s ease-out forwards;
+}
+.Game_Background.error {
+  background: radial-gradient(#FF2323, #EA2020);
+  animation: anim_Game_Background 1s ease-out forwards;
+}
+
+.Game_Image {
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  border: 2px solid #FFF;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 300px;
+  margin: auto;
+}
+
+
+
+.Game_Test {
+  width: 160%;
+  height: 150%;
+  background: #DB5000;
+  position: absolute;
+  left: -50px;
+  bottom: -50px;
+  transform-origin: top left;
+  animation: anim_Game_Test 7s ease-out infinite forwards;
+}
+@keyframes anim_Game_Test {
+  0% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}
+
+.Game.end .Game_Test {
+  animation: anim_Game_Test 7s ease-out infinite forwards, anim_Game_End_Game_Test 700ms ease-out forwards;
+}
+@keyframes anim_Game_End_Game_Test {
+  0% {
+    height: 230px;
+  }
+  100% {
+  height: 150%;
+  }
+}
+
+.Game.start .Game_Test {
+  animation: anim_Game_Test 7s ease-out infinite forwards, anim_Game_Start_Game_Test 700ms ease-out forwards;
+}
+@keyframes anim_Game_Start_Game_Test {
+  0% {
+    height: 150%;
+  }
+  100% {
+    height: 230px;
+  }
+}
+
+
+.Game_Test2 {
+  width: 160%;
+  height: 210px;
+  background: linear-gradient(-260deg, #FF7526, #FF6000);
+  position: absolute;
+  left: -50px;
+  bottom: -50px;
+  transform-origin: top right;
+  animation: anim_Game_Test 10s ease-out infinite forwards;
+}
+@keyframes anim_Game_Test {
+  0% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}
+
+
+
+.Window_Content {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+}
+.Window_Content_Background {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+}
+.Game.success .Window_Content_Background {
+  background: rgba(255,255,255,0.1);
+  animation: anim_Window_Content_Background_Success 300ms ease-out forwards;
+}
+.Game.error .Window_Content_Background {
+  background: rgba(255,255,255,0.1);
+  animation: anim_Window_Content_Background_Success 300ms ease-out forwards;
+}
+.Window_Content_Items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.Window_Item {
+  width: 40px;
+  height: 40px;
+  background: rgba(0,0,0,0.1);
+  box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.3);
+  border: 2px solid #FFF;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+}
+.Game.success .Window_Item {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+.Window_Item_Letter {
+  color: #FFF;
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.Window_Content_Word {
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: anim_Window_Content_Word 100ms ease-out forwards;
+}
+
+@keyframes anim_Window_Content_Word {
+  0% {
+    opacity: 0;
+    transform: scale(10, 10);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
+.Game.success .Window_Content_Items {
+  animation: anim_Window_Content_Items 100ms ease-out forwards;
+}
+@keyframes anim_Window_Content_Items {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.Letter_Content {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  opacity: 1;
+  left: 0;
+  bottom: 10px;
+}
+
+.Game.start .Letter_Content {
+
+}
+@keyframes anim_Game_Start_Letter_Content {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Game.end .Letter_Content {
+  animation: anim_Game_End_Letter_Content 400ms ease-out forwards;
+}
+@keyframes anim_Game_End_Letter_Content {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+.Letter_Item {
+  width: 40px;
+  height: 40px;
+  background: #1581D3;
+  border: 2.5px solid #FFF;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+}
+.Game.start .Letter_Item {
+  animation: anim_Game_Start_Letter_Item 1s ease-out forwards;
+}
+@keyframes anim_Game_Start_Letter_Item {
+  0% {
+    transform: scale(0, 0) translate(0%, 0%);
+  }
+  30% {
+    transform: scale(0.5, 0.5) translate(0%, -190%);
+  }
+  60% {
+  transform: scale(1, 1) translate(0%, 20%);
+  }
+  80% {
+  transform: translate(0%, -10%);
+  }
+  100% {
+  transform: translate(0%, 0%);
+  }
+}
+.Game.start .Letter_Item.select {
+  animation: anim_Letter_Item_Select 300ms ease-out forwards;
+}
+.Letter_Item.select {
+  animation: anim_Letter_Item_Select 300ms ease-out forwards;
+}
+@keyframes anim_Letter_Item_Select {
+  0% {
+    opacity: 1;
+    transform: scale(1, 1) translate(0%, 30%);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2, 2) translate(0%, 0%);
+  }
+}
+
+
+
+
+.Letter_Item.active {
+  background: #6B54DD;
+}
+.Letter_Item_Letter {
+  color: #FFF;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 3px;
+}
+
+
+.Game.success .Window_Content_Background {
+  animation: anim_Window_Content_Background_Success 300ms ease-out forwards;
+}
+@keyframes anim_Window_Content_Background_Success {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+.Game.success .Window_Item {
+  animation: anim_Window_Item_Success 1s ease-out forwards;
+}
+@keyframes anim_Window_Item_Success {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+  }
+}
+
+
+
+
+
+
+@keyframes anim_Game_Background {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
